@@ -30,20 +30,39 @@ C=100
 D=500
 M=1000
 s="III"
-contane=0
+total=0
+wut = ""
+contange=[]
 for i in range(0,len(s)):
+    contange.append(s[i])
+    if len(contange) == 2:
+        for j in range(0,len(contange)):
+            wut = wut + str(contange[j])
+        if wut == "IV":
+            total+=4
+        if wut == "IX":
+            total+=9
+        if wut == "XL":
+            total+=40
+        if wut == "XC":
+            total+=90
+        if wut == "CD":
+            total+=400
+        if wut == "CM":
+            total+=900
+        wut = ""
+        contange=[]
     if s[i] == "I":
-        contane+=1
+        total+=1
     if s[i] == "V":
-        contane+=5
+        total+=5
     if s[i] == "L":
-        contane+=50
+        total+=50
     if s[i] == "X":
-        contane+=10
+        total+=10
     if s[i] == "C":
-        contane+=100
+        total+=100
     if s[i] == "D":
-        contane+=500
+        total+=500
     if s[i] == "M":
-        contane+=1000
-print(contane)
+        total+=1000
