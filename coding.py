@@ -1,68 +1,13 @@
-# Solving the first coding test
-target=6
-nums=[3,2,4]
-for i in range(0,len(nums)):
-    for j in range(i+1,len(nums)):
-        if nums[i] + nums[j] == target:
-            print([i, j])
 
-# Sovling the second coding test
-l1 = [2,4,3]
-l2 = [5,6,4]
-truel1=""
-truel2=""
-for i in range(0,len(l1)):
-    truel1 = truel1 + str(l1[::-1][i])
-for i in range(0,len(l2)):
-    truel2 = truel2 + str(l2[::-1][i])
-true=int(truel1) + int(truel2)
-map(int, str(true))
-
-#next problems
-#I can be placed before V (5) and X (10) to make 4 and 9. 
-#X can be placed before L (50) and C (100) to make 40 and 90. 
-#C can be placed before D (500) and M (1000) to make 400 and 900.
-I=1
-V=5
-X=10
-L=50
-C=100
-D=500
-M=1000
-s="III"
-total=0
-wut = ""
-contange=[]
-for i in range(0,len(s)):
-    contange.append(s[i])
-    if len(contange) == 2:
-        for j in range(0,len(contange)):
-            wut = wut + str(contange[j])
-        if wut == "IV":
-            total+=4
-        if wut == "IX":
-            total+=9
-        if wut == "XL":
-            total+=40
-        if wut == "XC":
-            total+=90
-        if wut == "CD":
-            total+=400
-        if wut == "CM":
-            total+=900
-        wut = ""
-        contange=[]
-    if s[i] == "I":
-        total+=1
-    if s[i] == "V":
-        total+=5
-    if s[i] == "L":
-        total+=50
-    if s[i] == "X":
-        total+=10
-    if s[i] == "C":
-        total+=100
-    if s[i] == "D":
-        total+=500
-    if s[i] == "M":
-        total+=1000
+s = "abcabcbb"
+a=0
+b=''
+c=''
+counter=0
+i=0
+while i <= len(list(s)):
+    for j in range(i,len(s)):
+        b = b + s[j]
+        for h in range(0,len(s))
+            
+    i+=1
